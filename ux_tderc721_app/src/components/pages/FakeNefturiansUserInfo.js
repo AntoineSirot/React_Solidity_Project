@@ -1,9 +1,11 @@
 import './../../App.css';
-import { BrowserRouter as Router} from 'react-router-dom';
-import AppRoutes from "./../Routes";
+import { useParams } from "react-router-dom";
+
+
 
 function FakeNefturiansUserInfo() {
 
+    const {address} = useParams();
 
     return (
       <div className="App">
@@ -11,6 +13,7 @@ function FakeNefturiansUserInfo() {
           <a href="/">
               <button>Go back to the main page here</button> 
           </a>
+          <h3>Address of Owner : {address}</h3>
       </div>
     );
   }
