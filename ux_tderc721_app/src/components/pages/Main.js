@@ -38,7 +38,6 @@ function Main() {
             <li> <a href="/FakeBayc">Fake Bayc</a> </li>
             <li> <a href="/FakeMeebits">Fake Meebits</a> </li>
             <li> <a href="/FakeNefturians">Fake Nefturians</a> </li>
-            <li> <a href="/fakeNefturians/:userAddress">Fake Nefturians User Info</a> </li>
           </ul>
       </div>
     );
