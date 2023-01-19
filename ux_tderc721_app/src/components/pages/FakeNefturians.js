@@ -49,6 +49,8 @@ function FakeNefturians() {
 
     return (
       <div className="App">
+          <div class = "footer"></div>
+          <div class = "footer"></div>
           <h2>Fake Nefturians</h2>
           <p href="/">
               <button>Go back to the main page here</button> 
@@ -58,7 +60,15 @@ function FakeNefturians() {
       <button onClick={buyToken}> Buy a Token </button>
       <input onChange={handleInput} placeholder="Enter address.."/>
       <button onClick={getTokenDetail}>See information about the Nefturians owned buy his address (mine per defalut)</button>
-
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
       </div>
     );
   }

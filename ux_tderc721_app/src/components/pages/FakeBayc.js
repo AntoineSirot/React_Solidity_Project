@@ -65,6 +65,8 @@ function FakeBayc() {
 
     return (
       <div className="App">
+          <div class = "footer"></div>
+          <div class = "footer"></div>
           <h2>Fake Bayc</h2>
           <p><a href="/">
               <button>Go back to the main page here</button> 
@@ -77,6 +79,12 @@ function FakeBayc() {
             <input onChange={handleInput} placeholder="Enter tokenId.."/>
             <button onClick={getTokenDetail}>See information about the Bored Ape</button>
           </div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
 
       </div>
     );

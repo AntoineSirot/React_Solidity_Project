@@ -53,6 +53,8 @@ function FakeNefturiansUserInfo() {
  
     return (
       <div className="App">
+          <div class = "footer"></div>
+          <div class = "footer"></div>
           <h2>Fake Nefturians User Info</h2>
           <a href="/">
               <button>Go back to the main page here</button> 
@@ -60,6 +62,16 @@ function FakeNefturiansUserInfo() {
           <h3>Address of Owner : {userAddress}</h3>
           <h3>Balance of Token : {balance}</h3>
           {infos}
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
       </div>
     );
   }

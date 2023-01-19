@@ -49,6 +49,8 @@ function FakeMeebits() {
 
     return (
       <div className="App">
+          <div class = "footer"></div>
+          <div class = "footer"></div>
           <h2>Fake Meebits</h2>
           <a href="/">
               <button>Go back to the main page here</button> 
@@ -56,6 +58,16 @@ function FakeMeebits() {
           <p><input onChange={handleInput} placeholder="Enter tokenID.."/>
           <button onClick={mintToken}>Mint the Meebits with your token ID</button></p>
           <p>{minted}</p>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
       </div>
     );
   }

@@ -2,15 +2,19 @@ import './../../App.css';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import {IpfsImage} from "react-ipfs-image";
+import myImage from './BAYC.png'; // import the image
+
 
 var Web3 = require('web3');
 const web3 = new Web3(window.ethereum)
+//import ColorThief from 'color-thief';
+
+
 
 function FakeBaycTokenInfo() {
 
 
     const [error, setError] = useState("");
-    const [infos, setInfos] = useState("");
     const [image, setImage] = useState("");
     const [token, setToken] = useState(0);
     const [intialized, setInitiliaze] = useState(false);
@@ -47,12 +51,21 @@ function FakeBaycTokenInfo() {
         image = (<><h3>Bored Ape #{ tokenId }</h3>
         <IpfsImage hash={image}/>
         </>);
-        let s = ""
+        let s = "<table class=\"centerTable\" cellspacing=\"5\"> <tr>"
         for (let i = 0; i < urijson.attributes.length; i++) {
-          s += urijson.attributes[i].trait_type + " : " + urijson.attributes[i].value + "; "
+          s += "<th>" + urijson.attributes[i].trait_type + "</th>"
         } 
-        setInfos(s)
+        s += "</tr> <tr>"
+        for (let i = 0; i < urijson.attributes.length; i++) {
+          s += " <td> " + urijson.attributes[i].value + " </td> "
+        } 
+        s += "</tr> </table>"
+        document.getElementById("infos").innerHTML = s;
         setImage(image);
+        // const colorThief = new ColorThief();
+        // const dominantColor = colorThief.getColor(image);
+        //document.body.style.backgroundColor = `rgb(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]})`;
+
       }
     }
 
@@ -77,16 +90,20 @@ function FakeBaycTokenInfo() {
 
     return (
       <div className="App">
-          <h2>Fake Bayc Token Info</h2>
+
+        <div class='BAYC'> Fake Bayc <img class="img_Bayc" src={myImage} /> Token Info</div>
+
           <p>
               <button  onClick={Main_Page}>Go back to the main page here</button> 
           </p>
           {error}
-          {infos}
+          <div id="infos">
+          </div>
           {image}
           <h3> Other Bored Ape : </h3>
           <input onChange={handleInput} placeholder="Enter tokenId.."/>
-            <button onClick={getTokenDetail}>See information about the Bored Ape</button>
+          <button onClick={getTokenDetail} >See information about the Bored Ape</button>
+          <div class = "footer"></div>
 
 
       </div>

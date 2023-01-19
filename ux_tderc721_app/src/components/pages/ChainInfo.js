@@ -60,6 +60,10 @@ function ChainInfo() {
     
     return (
       <div className="ChainInfo">
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>       
+          <div class = "footer"></div>
           <h2>Chain Info</h2>
           <a href="/">
               <button>Go back to the main page here</button> 
@@ -68,6 +72,12 @@ function ChainInfo() {
           <p>Address : {walletAddress}</p>
           <p>Last Block : {lastBlock}</p>
           {root}
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
+          <div class = "footer"></div>
       </div>
     );
 
